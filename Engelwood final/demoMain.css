@@ -734,7 +734,7 @@ html {
 }
 
 /* Mobile Styles */
-@media (min-width: 390px) and (max-width: 650px) {
+@media (min-width: 320px) and (max-width: 650px) {
   .card {
     flex: 1 1 100%; /* Full width for smaller screens */
   }
