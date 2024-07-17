@@ -1,0 +1,1041 @@
+/* Base Styles */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  overflow-x: hidden;
+}
+
+.main-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  width: 3000px;
+  overflow-x: hidden;
+}
+/* the design for the intro container */
+.hero-container {
+  max-width: 100%;
+  background-position: center;
+  margin: 0 auto;
+  padding: 20px;
+  background-image: url("images\ copy/main image.png");
+  height: 838px;
+  background-size: cover;
+  object-fit: scale-down;
+  background-repeat: no-repeat;
+}
+
+.intro-container {
+  color: rgba(255, 255, 255, 1);
+  max-width: 900px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 230px;
+}
+
+.intro-container h1 {
+  font-family: "Lora", serif;
+  line-height: 122.88px;
+  font-weight: 500px;
+  font-size: 96px;
+}
+.intro-container p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 26px;
+  line-height: 31.69px;
+}
+.intro-container button {
+  max-width: 362px;
+  cursor: pointer;
+  margin-top: 6px;
+  height: 54px;
+}
+.shop-button {
+  border: none;
+  font-size: 24px;
+  background-color: #b7926a;
+  line-height: 29.26px;
+  color: #ffff;
+}
+.shop-button:hover {
+  color: rgba(255, 255, 255, 1);
+  background-color: rgb(186, 135, 81);
+  transition: 0.5s ease-in-out;
+}
+.join-button {
+  background-color: #ffff;
+  line-height: 29.26px;
+  font-size: 24px;
+  color: #1c1c1c;
+}
+.join-button:hover {
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(183, 146, 106, 1);
+  transition: 0.5s ease-in-out;
+}
+
+/* THE DESIGN FOR THE SLIDER SECTION IN THE MERCHANT'S PICK */
+.slider-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  padding-bottom: 30px;
+  height: auto;
+  margin: 0 auto;
+}
+.text-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 150px;
+  padding: 20px;
+  max-width: 341px;
+  height: 334px;
+}
+.text-container h1 {
+  font-family: "Lora", serif;
+  max-width: 220px;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 51.2px;
+}
+.text-container p {
+  font-family: "Montserrat", sans-serif;
+  color: rgba(133, 128, 128, 1);
+  font-weight: 400px;
+  font-size: 22px;
+  line-height: 26.82px;
+}
+.text-container button {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500px;
+  font-size: 24px;
+  line-height: 29.26px;
+  text-align: center;
+  max-width: 328px;
+  background-color: transparent;
+  height: 75px;
+  border: 1px solid rgba(183, 146, 106, 1);
+  border-radius: 2px;
+  color: rgba(32, 32, 32, 1);
+  cursor: pointer;
+}
+.text-container button:hover {
+  color: rgba(255, 255, 255, 1);
+  background-color: rgb(186, 135, 81);
+  transition: 0.5s ease-in-out;
+}
+
+/* the design of the slider container */
+
+.slider-container {
+  max-width: 100%;
+  height: 506px;
+  overflow: hidden;
+  padding: 20px;
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+}
+
+.slider-wrapper {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.5s ease;
+  height: 100%;
+}
+
+.slide {
+  display: flex;
+  min-width: 100%;
+  box-sizing: border-box;
+}
+.slide1 {
+  display: none;
+}
+
+.inner-slidea,
+.inner-slideb {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-right: 1px solid #ccc;
+  box-sizing: border-box;
+  font-size: 24px;
+  color: #333;
+}
+
+.inner-slidea img {
+  width: 100%;
+}
+
+.inner-slide:last-child {
+  border-right: none;
+}
+
+/* THE DESIGN CODE FOR THE INNER SLIDE B CONTAINER THAT CONTAINS THE TEXT */
+.inner-slideb {
+  background-color: rgba(32, 32, 32, 1);
+}
+
+.innerSlideB-container {
+  max-width: 491px;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.innerSlideB-container h3 {
+  max-width: 272.49px;
+  margin: 10px;
+  line-height: 30.8px;
+  font-size: 24.06px;
+  font-weight: 600;
+  color: rgba(183, 146, 106, 1);
+  font-family: "Lora", serif;
+}
+.inner-slideb p {
+  max-width: 307px;
+  padding-bottom: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400px;
+  font-size: 15.31px;
+  color: rgba(255, 255, 255, 1);
+}
+.inner-slideb svg {
+  padding-bottom: 20px;
+}
+.inner-slideb button {
+  font-family: "Lora", serif;
+  font-weight: 400;
+  font-size: 13.12px;
+  line-height: 16.8px;
+  color: rgba(183, 146, 106, 1);
+  background-color: transparent;
+  border: 0.55px solid rgba(183, 146, 106, 1);
+  cursor: pointer;
+  width: 101.72px;
+  height: 27.34px;
+}
+.inner-slideb button:hover {
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(183, 146, 106, 1);
+  transition: 0.5s ease-in-out;
+}
+
+.prev-btn,
+.next-btn {
+  background-color: transparent;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.prev-btn:hover,
+.next-btn:hover {
+  color: #555554;
+  transition: 0.5s ease-in;
+}
+
+/* THE DESIGN FOR THE CELLAR ESSENTIALS SECTION */
+.cellarEssentials-container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.cellarCards-container {
+  display: inline-flex;
+  padding-right: 20px;
+  padding-top: 150px;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  width: 100%;
+  height: auto;
+}
+.cellarEssentials-container button {
+  height: 53.56px;
+}
+.cellarCard {
+  background-color: #f9f9f9;
+  overflow: hidden;
+  flex: 1;
+  margin: 10px;
+  max-width: 100%;
+}
+.cellarCard img {
+  width: 100%;
+  height: 350px;
+}
+.card-content {
+  padding: 10px;
+}
+.card-title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  line-height: 19.5px;
+  margin: 0 0 10px;
+}
+.card-price {
+  color: rgba(183, 146, 106, 1);
+  font-size: 1.1em;
+  margin: 0;
+}
+.card-price span {
+  color: rgba(0, 0, 0, 0.32);
+  font-size: 0.9em;
+  text-decoration: line-through;
+}
+/* THE DESIGN FOR THE CARDS UNDER THE MERCHANT'S PICK SECTION */
+
+.container {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  max-width: 100%;
+  margin: auto;
+  padding: 20px;
+}
+
+.card {
+  background-color: rgba(249, 249, 249, 1);
+  overflow: hidden;
+  flex: 1 1 calc(50% - 10px); /* Responsive width: 2 cards per row with a 10px gap */
+  display: flex;
+  flex-direction: column;
+}
+
+.card img {
+  width: 100%;
+  height: 60%; /* Image takes 40% of the card's height */
+  object-fit: cover;
+}
+
+.card h2,
+.card p,
+.card a {
+  max-width: 765px;
+  padding: 0 20px;
+}
+.card h2 {
+  font-family: "Lora", serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 30.72px;
+}
+.card p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+}
+.card a {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24.38px;
+  color: rgba(183, 146, 106, 1);
+  text-decoration: none;
+}
+
+.card a:hover {
+  text-decoration: underline;
+}
+
+/* THE DESIGN FOR THE FOLLOW US GRID CARDS */
+
+.followUsCard {
+  background-color: #f9f9f9;
+  overflow: hidden;
+  flex: 1;
+  margin: 10px;
+  max-width: 400px;
+}
+.followUsCard img {
+  width: 100%;
+  height: 100%;
+}
+.followUsCards-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding-top: 150px;
+}
+
+/* THE DESIGN FOR THE MAP CARDS SECTION */
+
+.mapCard-container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100%;
+  margin: 100px 0;
+  padding: 20px;
+}
+
+.mapcard {
+  height: 540px;
+  background-color: rgba(32, 32, 32, 1);
+  border: 1px solid #ddd;
+  overflow: hidden;
+  flex: 1 1 calc(50% - 10px); /* Responsive width: 2 cards per row with a 10px gap */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+.mapCard1 {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  align-items: center;
+}
+.mapCard1 i {
+  font-size: 50px;
+  padding-bottom: 15px;
+  color: rgba(183, 146, 106, 1);
+}
+.mapcard-Text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 150px;
+}
+.mapCard1 h2 {
+  font-family: "Lora", serif;
+  color: rgb(255, 255, 255);
+  font-weight: 400;
+  padding-bottom: 10px;
+  margin: 0;
+  font-size: 36px;
+  line-height: 46.08px;
+  letter-spacing: 0.06px;
+}
+.mapCard1 p {
+  font-family: "Lora", serif;
+  color: rgba(183, 146, 106, 1);
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 30.72px;
+  letter-spacing: 0.06px;
+}
+
+@media (min-width: 650px) and (max-width: 1024px) {
+  .card {
+    flex: 1 1 100%; /* Full width for smaller screens */
+  }
+  .hero-container {
+    margin: 0 auto;
+    padding: 10px;
+    background-image: url("images\ copy/main image.png");
+    background-position: center;
+    background-size: cover;
+    height: auto;
+    background-repeat: no-repeat;
+  }
+
+  .intro-container {
+    color: rgba(255, 255, 255, 1);
+    width: 393px;
+    display: flex;
+    overflow: hidden;
+    padding-bottom: 70px;
+    flex-direction: column;
+  }
+
+  .intro-container h1 {
+    font-family: "Lora", serif;
+    margin: 0;
+    overflow-x: hidden;
+    line-height: 40.96px;
+    font-weight: 500;
+    font-size: 34px;
+  }
+  .intro-container p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 12px;
+    line-height: 14.63px;
+  }
+  .intro-container button {
+    border: none;
+    max-width: 146px;
+    cursor: pointer;
+    margin-top: 6px;
+    height: 28px;
+  }
+  .shop-button {
+    font-size: 12px;
+    text-align: center;
+    background-color: #b7926a;
+    line-height: 14.63px;
+    color: #ffff;
+  }
+  .join-button {
+    background-color: #ffff;
+    line-height: 14.63px;
+    font-size: 12px;
+    color: #1c1c1c;
+  }
+
+  /* THE MOBILE VIEW FOR THE TEXT CONTAINER */
+
+  .text-container {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    margin-top: 20px;
+    padding: 20px;
+    max-width: 100%;
+    height: auto;
+  }
+  .text-container h1 {
+    font-family: "Lora", serif;
+    width: 100%;
+    height: 31px;
+    font-weight: 500;
+    font-size: 28px;
+    margin: 0;
+    line-height: 30.72px;
+  }
+  .text-container p {
+    font-family: "Montserrat", sans-serif;
+    color: rgba(133, 128, 128, 1);
+    font-weight: 400;
+    margin: 0;
+    font-size: 12px;
+    line-height: 14.63px;
+  }
+  .text-container button {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14.63px;
+    text-align: center;
+    max-width: 123px;
+    background-color: transparent;
+    height: 23px;
+    border: 1px solid rgba(183, 146, 106, 1);
+    border-radius: 2px;
+    color: rgba(32, 32, 32, 1);
+    cursor: pointer;
+  }
+
+  /* THE MOBILE VIEW FOR THE SLIDER */
+
+  .slider-container {
+    max-width: 1085.24px;
+    height: 506px;
+    padding: 0;
+    overflow: hidden;
+    margin-top: 100px;
+    display: none;
+    align-items: center;
+  }
+
+  .slider-wrapper {
+    display: none;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+  }
+
+  .slider {
+    display: flex;
+    transition: transform 0.5s ease;
+    height: 100%;
+  }
+
+  .slide {
+    display: flex;
+    min-width: 100%;
+    box-sizing: border-box;
+  }
+  .slide1 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .inner-slidea,
+  .inner-slideb {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    color: #333;
+  }
+  .inner-slideb {
+    height: 374px;
+  }
+  .inner-slidea img {
+    height: 383px;
+    object-fit: inherit;
+  }
+
+  .slider-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }
+  .prev-btn,
+  .next-btn {
+    display: none;
+  }
+
+  /* THE MOBILE DESIGN FOR THE CARDS UNDER THE MERCHAT'S PICK SECTION */
+  .card h2,
+  .card p,
+  .card a {
+    max-width: 765px;
+    padding: 0 20px;
+  }
+  .card h2 {
+    font-family: "Lora", serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 17.92px;
+  }
+  .card p {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 22px;
+  }
+  .card a {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14.63px;
+    padding-bottom: 10px;
+    color: rgba(183, 146, 106, 1);
+    text-decoration: none;
+  }
+
+  .card a:hover {
+    text-decoration: underline;
+  }
+
+  /* THE MOBILE  DESIGN FOR THE CELLAR ESSENTIALS SECTION */
+  .cellarEssentials-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .cellarCards-container {
+    display: grid;
+    justify-content: center;
+    padding-top: 20px;
+  }
+  .cellarEssentials-container button {
+    width: 123px;
+    height: 28px;
+  }
+  .cellarCard {
+    background-color: #f9f9f9;
+    overflow: hidden;
+    flex: 1;
+    margin: 10px;
+    max-width: 100%;
+  }
+  .cellarCard img {
+    width: 100%;
+    height: 350px;
+  }
+  .card-content {
+    padding: 10px;
+  }
+  .card-title {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    line-height: 19.5px;
+    margin: 0 0 10px;
+  }
+  .card-price {
+    color: rgba(183, 146, 106, 1);
+    font-size: 1.1em;
+    margin: 0;
+  }
+
+  /* THE DESIGN FOR THE MOBILE MAP CARDS SECTION */
+
+  .mapCard-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 100%;
+    margin-top: 50px;
+    padding: 10px;
+  }
+
+  .mapcard {
+    height: auto;
+    background-color: white;
+    overflow: hidden;
+    flex: 1 1 calc(50% - 10px); /* Responsive width: 2 cards per row with a 10px gap */
+    display: flex;
+    flex-direction: column;
+  }
+  .mapCard1 {
+    max-width: 100%;
+    height: 345px;
+    background-color: rgba(32, 32, 32, 1);
+    text-align: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+  .mapCard1 i {
+    font-size: 30px;
+    padding-bottom: 15px;
+    color: rgba(183, 146, 106, 1);
+  }
+  .mapcard-Text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 100px;
+  }
+  .mapCard1 h2 {
+    font-family: "Lora", serif;
+    color: rgb(255, 255, 255);
+    font-weight: 400;
+    padding-bottom: 10px;
+    font-size: 18px;
+    line-height: 23.04px;
+    letter-spacing: 0.06px;
+  }
+  .mapCard1 p {
+    font-family: "Lora", serif;
+    color: rgba(183, 146, 106, 1);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17.92px;
+    letter-spacing: 0.06px;
+  }
+  .mapcard iframe {
+    height: 345px;
+  }
+}
+
+/* Mobile Styles */
+@media (min-width: 320px) and (max-width: 650px) {
+  .card {
+    flex: 1 1 100%; /* Full width for smaller screens */
+  }
+  .container {
+    padding: 20px;
+  }
+
+  .hero-container {
+    margin: 0 auto;
+    padding: 20px;
+    background-image: url("images\ copy/main image.png");
+    background-position: center;
+    background-size: cover;
+    height: auto;
+    background-repeat: no-repeat;
+  }
+
+  .intro-container {
+    color: rgba(255, 255, 255, 1);
+    width: 303px;
+    display: flex;
+    overflow: hidden;
+    padding-bottom: 70px;
+    flex-direction: column;
+  }
+
+  .intro-container h1 {
+    font-family: "Lora", serif;
+    margin: 0;
+    line-height: 40.96px;
+    font-weight: 500;
+    font-size: 34px;
+  }
+  .intro-container p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 12px;
+    line-height: 14.63px;
+  }
+  .intro-container button {
+    border: none;
+    max-width: 146px;
+    cursor: pointer;
+    margin-top: 6px;
+    height: 28px;
+  }
+  .shop-button {
+    font-size: 12px;
+    text-align: center;
+    background-color: #b7926a;
+    line-height: 14.63px;
+    color: #ffff;
+  }
+  .join-button {
+    background-color: #ffff;
+    line-height: 14.63px;
+    font-size: 12px;
+    color: #1c1c1c;
+  }
+
+  /* THE MOBILE VIEW FOR THE TEXT CONTAINER */
+
+  .text-container {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    margin-top: 20px;
+    padding: 20px;
+    max-width: 100%;
+    height: auto;
+  }
+  .text-container h1 {
+    font-family: "Lora", serif;
+    width: 100%;
+    height: 31px;
+    font-weight: 500;
+    font-size: 28px;
+    margin: 0;
+    line-height: 30.72px;
+  }
+  .text-container p {
+    font-family: "Montserrat", sans-serif;
+    color: rgba(133, 128, 128, 1);
+    font-weight: 400;
+    margin: 0;
+    font-size: 12px;
+    line-height: 14.63px;
+  }
+  .text-container button {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14.63px;
+    text-align: center;
+    max-width: 123px;
+    background-color: transparent;
+    height: 28px;
+    border: 1px solid rgba(183, 146, 106, 1);
+    border-radius: 2px;
+    color: rgba(32, 32, 32, 1);
+    cursor: pointer;
+  }
+
+  /* THE MOBILE VIEW FOR THE SLIDER */
+
+  .slider-container {
+    max-width: 1085.24px;
+    height: 506px;
+    padding: 0;
+    overflow: hidden;
+    margin-top: 100px;
+    display: none;
+    align-items: center;
+  }
+
+  .slider-wrapper {
+    display: none;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+  }
+
+  .slider {
+    display: flex;
+    transition: transform 0.5s ease;
+    height: 100%;
+  }
+
+  .slide {
+    display: flex;
+    min-width: 100%;
+    box-sizing: border-box;
+  }
+  .slide1 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .inner-slidea,
+  .inner-slideb {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    color: #333;
+  }
+  .inner-slideb {
+    height: 374px;
+  }
+  .inner-slidea img {
+    height: 383px;
+  }
+
+  .slider-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }
+  .prev-btn,
+  .next-btn {
+    display: none;
+  }
+
+  /* THE MOBILE DESIGN FOR THE CARDS UNDER THE MERCHAT'S PICK SECTION */
+  .card h2,
+  .card p,
+  .card a {
+    max-width: 765px;
+    padding: 0 10px;
+  }
+  .card h2 {
+    margin: 10px 0;
+    font-family: "Lora", serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 17.92px;
+  }
+  .card p {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    width: 323px;
+    font-size: 12px;
+    line-height: 22px;
+  }
+  .card a {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14.63px;
+    padding-bottom: 10px;
+    color: rgba(183, 146, 106, 1);
+    text-decoration: none;
+  }
+
+  .card a:hover {
+    text-decoration: underline;
+  }
+
+  /* THE MOBILE  DESIGN FOR THE CELLAR ESSENTIALS SECTION */
+  .cellarEssentials-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .cellarCards-container {
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    padding: 11px;
+  }
+  .cellarEssentials-container button {
+    width: 123px;
+    height: 28px;
+  }
+  .cellarCard {
+    background-color: #f9f9f9;
+    overflow: hidden;
+    flex: 1;
+    margin: 10px;
+    max-width: 100%;
+  }
+  .cellarCard img {
+    width: 100%;
+    height: 350px;
+  }
+  .card-content {
+    padding: 10px;
+  }
+  .card-title {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    line-height: 19.5px;
+    margin: 0 0 10px;
+  }
+  .card-price {
+    color: rgba(183, 146, 106, 1);
+    font-size: 1.1em;
+    margin: 0;
+  }
+
+  /* THE DESIGN FOR THE MOBILE MAP CARDS SECTION */
+
+  .mapCard-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 100%;
+    margin-bottom: 0;
+    margin-top: 50px;
+    padding: 20px;
+  }
+
+  .mapcard {
+    height: auto;
+    background-color: white;
+    border: 1px solid #ddd;
+    overflow: hidden;
+    flex: 1 1 calc(50% - 10px); /* Responsive width: 2 cards per row with a 10px gap */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+  }
+  .mapCard1 {
+    max-width: 100%;
+    height: 345px;
+    background-color: rgba(32, 32, 32, 1);
+    text-align: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+  .mapCard1 i {
+    font-size: 30px;
+    padding-bottom: 15px;
+    color: rgba(183, 146, 106, 1);
+  }
+  .mapcard-Text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 100px;
+  }
+  .mapCard1 h2 {
+    font-family: "Lora", serif;
+    color: rgb(255, 255, 255);
+    font-weight: 400;
+    padding-bottom: 10px;
+    font-size: 20px;
+    line-height: 23.04px;
+    letter-spacing: 0.06px;
+  }
+  .mapCard1 p {
+    font-family: "Lora", serif;
+    color: rgba(183, 146, 106, 1);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17.92px;
+    letter-spacing: 0.06px;
+  }
+  .mapcard iframe {
+    height: 345px;
+  }
+}

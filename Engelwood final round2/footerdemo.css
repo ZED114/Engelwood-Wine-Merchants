@@ -1,0 +1,276 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+footer {
+  padding: 20px 0;
+  border-top: 1px solid rgba(183, 146, 106, 1);
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1920px;
+  overflow-x: hidden;
+  padding: 20px;
+}
+
+.footer-section {
+  flex: 1 1.2 1.2;
+  margin: 10px;
+  min-width: 200px;
+}
+
+.footer-section h2,
+.footer-section h3 {
+  margin-top: 0;
+}
+.footer-section p strong {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  color: rgba(183, 146, 106, 1);
+  font-size: 1.9vh;
+  letter-spacing: 0.06px;
+}
+.footer-section h2 {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 400;
+  font-size: 3vh;
+  color: rgba(0, 0, 0, 1);
+}
+.copyright {
+  padding: 0 20px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 40px;
+  letter-spacing: 0.06px;
+}
+.copyright p {
+  margin: 0;
+}
+.dropdown-header {
+  display: flex;
+  border-bottom: 1px solid rgba(183, 146, 106, 1);
+  flex-direction: row;
+  justify-content: space-between;
+}
+.dropdown-header svg {
+  display: none;
+  padding-top: 25px;
+}
+.footer-section h3 {
+  padding-bottom: 10px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 2.5vh;
+  letter-spacing: 0.06px;
+  color: rgba(183, 146, 106, 1);
+  cursor: pointer;
+}
+
+.footer-section h4 {
+  font-family: "Lora", serif;
+  font-weight: 600;
+  font-size: 2.5vh;
+  color: rgba(0, 0, 0, 1);
+}
+.footer-section p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 1.7vh;
+  letter-spacing: 0.06px;
+}
+.footer-section a {
+  text-decoration: none;
+  color: rgba(28, 28, 28, 1);
+  padding-top: 10px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 1.7vh;
+  letter-spacing: 0.06px;
+}
+.footer-section form {
+  display: flex;
+  flex-direction: column;
+}
+.footerMain-container {
+  max-width: 396px;
+}
+.footer-section input[type="email"] {
+  border: none;
+  border-bottom: 1px solid rgba(71, 68, 67, 1);
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.footer-section button {
+  padding: 10px;
+  background-color: transparent;
+  border: 1px solid rgba(183, 146, 106, 1);
+  color: rgba(28, 28, 28, 1);
+  cursor: pointer;
+}
+.footer-section button:hover {
+  background-color: rgba(183, 146, 106, 1);
+  transition: 0.5s ease-in-out;
+  color: white;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+  color: rgba(183, 146, 106, 1);
+  margin-top: 20px;
+}
+.social-icons-mobile {
+  display: none;
+  gap: 15px;
+  color: rgba(183, 146, 106, 1);
+  margin-top: 20px;
+}
+.social-icons i:hover {
+  cursor: pointer;
+  color: rgb(165, 101, 33);
+  transition: 0.5s ease-in-out;
+}
+
+.dropdown-content {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 1024px) {
+  footer {
+    border: none;
+  }
+
+  .footerMain-container {
+    max-width: 100%;
+  }
+  .footer-container {
+    padding: 20px;
+  }
+  .footer-section {
+    flex: 1 1 100%;
+    border-bottom: 1px solid rgba(237, 237, 237, 1);
+    margin: 10px 0;
+  }
+
+  .social-icons {
+    display: none;
+  }
+  .social-icons-mobile {
+    display: flex;
+    gap: 15px;
+    color: rgba(183, 146, 106, 1);
+    margin-top: 20px;
+  }
+
+  /* FOOTER FONTS CHANGED FOR MOBILE */
+
+  .footer-section h2 {
+    display: none;
+  }
+  .copyright {
+    padding: 0 20px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 40px;
+    letter-spacing: 0.06px;
+  }
+  .copyright p {
+    margin: 0;
+    max-width: 333px;
+  }
+  .dropdown-header {
+    border: none;
+  }
+  .footer-section h3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: "Montserrat", sans-serif;
+    border-bottom: 1px solid rgba(237, 237, 237, 1);
+    font-weight: 500;
+    font-size: 14.88px;
+    line-height: 25.38px;
+    letter-spacing: 0.06px;
+    color: rgba(0, 0, 0, 0.87);
+    cursor: pointer;
+  }
+  .dropdown-header svg {
+    display: flex;
+    padding-top: 25px;
+  }
+  .footer-section h3 svg {
+    display: flex;
+  }
+  .footer-section h4 {
+    margin: 5px;
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 400;
+    font-size: 18.88px;
+    letter-spacing: 0.4px;
+    line-height: 27px;
+    color: rgba(0, 0, 0, 1);
+  }
+  .footer-section p {
+    margin: 5px;
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 0.06px;
+  }
+  .footer-section p strong {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    color: rgba(183, 146, 106, 1);
+    font-size: 14px;
+    letter-spacing: 0.06px;
+  }
+  .footer-section a {
+    text-decoration: none;
+    color: rgba(28, 28, 28, 1);
+    padding-top: 10px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    letter-spacing: 0.06px;
+  }
+  .footer-section h3 {
+    display: block;
+    padding: 10px;
+    margin: 0;
+  }
+
+  .dropdown-content {
+    display: none;
+    padding: 10px;
+  }
+
+  .dropdown-content a,
+  .dropdown-content p {
+    display: block;
+    margin: 0;
+  }
+
+  .footer-section input[type="email"] {
+    border: none;
+    border-bottom: 1px solid rgba(183, 146, 106, 1);
+    padding: 10px;
+    margin: 10px 0;
+  }
+
+  .footer-section button {
+    padding: 10px;
+    background-color: transparent;
+    border: 1px solid rgba(28, 28, 28, 1);
+    color: rgba(28, 28, 28, 1);
+    cursor: pointer;
+  }
+}
